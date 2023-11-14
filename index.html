@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Fishcorp</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <!-- <h1>/LP/</h1> -->
+                    <div class="logo">
+                        <a href="#">
+                            <img src="./img/logo-fishcorp.png" alt="">
+                        </a>
+                    </div>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#vision-mision" onclick="seleccionar(this)">VISIÓN Y MISIÓN</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PRODUCTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">INFORMACIÓN</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>A <span>FISHCORP</span>, Empresa Atunera Ecuatoriana</h2>
+                <p class="descripcion">La fuerza del océano nos inspira, cada día nos desafiamos a alcanzar nuevas metas y a brindar lo mejor de nosotros para llevar productos frescos y de calidad a tu mesa. </p>
+                <!-- <a href="#portfolio">Ir a Portafolio</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto1.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Nuestra Querida Empresa <span>FISHCORP</span> Les da la Bienvenida </h2>
+            <h3>NOSOTROS</h3>
+            <p>La producción de FISHCORP S.A. está dirigida al procesamiento de lomos precocidos congelados empacados al vacío, conservas de atún y sardinas en diferentes presentaciones</p>
+            <p>En Fishcorp, nos enorgullecemos de nuestra dedicación a la elaboración de lomos precocidos congelados empacados al vacío y una amplia gama de conservas de atún y sardinas en diversas presentaciones.</p>
+            <p>¡Te invitamos a explorar nuestro mundo marino y a disfrutar de productos que llevan el sabor y la frescura del océano directamente a tu mesa!</p>
+            <!-- <a href="#">Descargar CV</a> -->
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <!-- <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatibus rem illum sunt, asperiores!</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Porgramación PHP</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Posicionamiento SEO</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Diseñador Gráfico</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-person-circle-question"></i></span>
+                <h4>Consultor Externo</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have been providing web design services with great success for 9 years. The client is very happy</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="servicios">
+        <h3 class="titulo-seccion">SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <img src="./img/servicios.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>Servicio de Maquila</h4>
+                <hr>
+                <!-- <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul> -->
+                <!-- <p>Lomos de atún en aceite presentaciones de 140 - 200 gramos</p> -->
+            </div>
+            
+            <div class="servicio">
+                <img src="./img/servicios.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>Servicio de Maquila</h4>
+                <hr>
+            </div>
+            <div class="servicio">
+                <img src="./img/servicios.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>Servicio de Maquila</h4>
+                <hr>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <img src="./img/servicios.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>Servicio de Maquila</h4>
+                <hr>
+            </div>
+            <div class="servicio">
+                <img src="./img/servicios.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>Servicio de Maquila</h4>
+                <hr>
+            </div>
+            <div class="servicio">
+                <img src="./img/servicios.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>Servicio de Maquila</h4>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision-mision">
+        <h3 class="titulo-seccion">VISIÓN Y MISIÓN</h3>
+        <div class="fila">
+            <div class="servicio">
+                <img src="./img/vision.png" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>VISIÓN</h4>
+                <hr>
+                <p>Ser líderes en brindar productos y servicios que generen confianza a nuestros clientes, contando con un respaldo en nuestro posicionamiento de marca en los mercados nacionales e internacionales, beneficiando a la comunidad donde estamos establecidos.</p>
+            </div>
+            
+            <div class="servicio">
+                <img src="./img/mision.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>MISIÓN</h4>
+                <hr>
+                <p>Somos un grupo empresarial dedicado al procesamiento de productos del mar, enfocado a satisfacer las necesidades de nuestros clientes, colaboradores y accionistas con un trabajo en equipo, honesto y competitivo, bajo procesos que tienen altas normas de aseguramiento de calidad y eficiencia.</p>
+            </div>
+            <div class="servicio">
+                <img src="./img/politica.jpeg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>POLÍTICA</h4>
+                <hr>
+                <p>Ser líderes en brindar productos y servicios que generen confianza a nuestros clientes, contando con un respaldo en nuestro posicionamiento de marca en los mercados nacionales e internacionales, beneficiando a la comunidad donde estamos establecidos.</p>
+            </div>
+        </div>        
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <!-- <section id="portfolio">
+        <h3 class="titulo-seccion">VISIÓN Y MISIÓN</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="portfolio">
+        <h3 class="titulo-seccion">PRODUCTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/producto.jpeg" alt="">
+                <div class="info">
+                    <h4>Lomos de Atún</h4>
+                    <p>Presentaciones de 140 - 200 gramos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <!-- <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section> -->
+    
+    <section id="vision-mision">
+        <h3 class="titulo-seccion">VISIÓN Y MISIÓN</h3>
+        <div class="fila">
+            <div class="servicio">
+                <img src="./img/vision.png" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>VISIÓN</h4>
+                <hr>
+                <p>Ser líderes en brindar productos y servicios que generen confianza a nuestros clientes, contando con un respaldo en nuestro posicionamiento de marca en los mercados nacionales e internacionales, beneficiando a la comunidad donde estamos establecidos.</p>
+            </div>
+            
+            <div class="servicio">
+                <img src="./img/mision.jpg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>MISIÓN</h4>
+                <hr>
+                <p>Somos un grupo empresarial dedicado al procesamiento de productos del mar, enfocado a satisfacer las necesidades de nuestros clientes, colaboradores y accionistas con un trabajo en equipo, honesto y competitivo, bajo procesos que tienen altas normas de aseguramiento de calidad y eficiencia.</p>
+            </div>
+            <div class="servicio">
+                <img src="./img/politica.jpeg" alt="Descripción de la imagen" class="imagen-centrada">
+                <h4>POLÍTICA</h4>
+                <hr>
+                <p>Ser líderes en brindar productos y servicios que generen confianza a nuestros clientes, contando con un respaldo en nuestro posicionamiento de marca en los mercados nacionales e internacionales, beneficiando a la comunidad donde estamos establecidos.</p>
+            </div>
+        </div>        
+    </section>
+
+     <!-- SECCION CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Información</h2>
+            <div class="fila">
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-phone"></i> Teléfono
+                    </h2>
+                    <span class="info-contacto">(+593-5) 2389020</span>
+                    <span class="info-contacto">(+593-9) 99242475</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-envelope"></i> Correo
+                    </h2>
+                    <span class="info-contacto">sestrada@fishcorpsa.com.ec</span>
+                </div>
+                <div class="col">
+                    <h2>
+                        <i class="fa-solid fa-building"></i> Quienes Somos
+                    </h2>
+                    <span class="info-contacto">La empresa FISHCORP S.A. fue constituida el 7 de agosto de 1996, en el cantón Jaramijó provincia de Manabí-Ecuador. Se encuentra ubicada en el Km. 4 1/2 vía Manta – Rocafuerte.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p id="copyright">Fishcorp S.A ®</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
