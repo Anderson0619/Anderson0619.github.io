@@ -545,7 +545,7 @@
         #portfolio .fila .proyecto img {
             width: 350px;
             height: 100%;            
-            filter: grayscale(1);
+            /* filter: grayscale(1); */
             object-fit: cover;
             transition: .5s;
         }
