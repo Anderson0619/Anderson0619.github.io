@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/estilo.css">
     <title>Fishcorp</title>
     <link rel="icon" href="./img/logo-fishcorp.png" type="image/x-icon">
 </head>
@@ -28,7 +29,7 @@
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#personal-services" onclick="seleccionar(this)">SERVICIOS</a></li>
                             <li><a href="#vision-mision" onclick="seleccionar(this)">VISIÓN Y MISIÓN</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PRODUCTOS</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">INFORMACIÓN</a></li>
@@ -148,19 +149,13 @@
         </div>
     </section> -->
 
-    <section id="servicios">
+   <!--  <section id="servicios">
         <h3 class="titulo-seccion">SERVICIOS</h3>
         <div class="fila">
             <div class="servicio">
                 <img src="./img/servicios.jpg" alt="Descripción de la imagen" class="imagen-centrada">
                 <h4>Servicio de Maquila</h4>
                 <hr>
-                <!-- <ul class="servicios-tag">
-                    <li>Web</li>
-                    <li>Graphic</li>
-                    <li>SEO</li>
-                </ul> -->
-                <!-- <p>Lomos de atún en aceite presentaciones de 140 - 200 gramos</p> -->
             </div>
             
             <div class="servicio">
@@ -190,6 +185,67 @@
                 <h4>Servicio de Maquila</h4>
                 <hr>
             </div>
+        </div>
+    </section> -->
+
+    <section id="personal-services" class="home">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+
+            <h3 class="titulo-seccion">PERSONAL DE SERVICIOS</h3>
+      
+          <div class="carousel-controls">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" style="background-image: url(img/servicios.jpg);"></li>
+              <li data-target="#carousel" data-slide-to="1" style="background-image: url(img/servicio1.jpg);"></li>
+              <li data-target="#carousel" data-slide-to="2" style="background-image: url(img/servicio2.png);"></li>
+              <li data-target="#carousel" data-slide-to="3" style="background-image: url(img/servicio3.jpg);"></li>
+              <!-- <li data-target="#carousel" data-slide-to="4" style="background-image: url(img/servicio5.jpg);"></li> -->
+              <li data-target="#carousel" data-slide-to="4" style="background-image: url(img/servicio6.jpg);"></li>
+              <li data-target="#carousel" data-slide-to="5" style="background-image: url(img/servicio7.jpg);"></li>
+            </ol>
+      
+            <a class="carousel-control-prev" role="button" data-slide="prev" href="#carousel">
+              <img src="img/left-arrow.svg" alt="Previous">
+            </a>
+            <a class="carousel-control-next" role="button" data-slide="next" href="#carousel">
+              <img src="img/right-arrow.svg" alt="Next">
+            </a>
+      
+          </div>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(img/servicios.jpg);">
+              <div class="container">
+              </div>
+            </div>
+      
+            <div class="carousel-item" style="background-image: url(img/servicio1.jpg);">
+              <div class="container">               
+              </div>
+            </div>
+      
+            <div class="carousel-item" style="background-image: url(img/servicio2.png);">
+              <div class="container">                
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(img/servicio3.jpg);">
+                <div class="container">                
+                </div>
+              </div>
+             <!--  <div class="carousel-item" style="background-image: url(img/servicio5.jpg);">
+                <div class="container">                
+                </div>
+              </div> -->
+              <div class="carousel-item" style="background-image: url(img/servicio6.jpg);">
+                <div class="container">                
+                </div>
+              </div>
+              <div class="carousel-item" style="background-image: url(img/servicio7.jpg);">
+                <div class="container">                
+                </div>
+              </div>
+          </div>
+        
         </div>
     </section>
 
@@ -200,20 +256,20 @@
                 <img src="./img/vision.png" alt="Descripción de la imagen" class="imagen-centrada">
                 <h4>VISIÓN</h4>
                 <hr>
-                <p>Ser líderes en brindar productos y servicios que generen confianza a nuestros clientes, contando con un respaldo en nuestro posicionamiento de marca en los mercados nacionales e internacionales, beneficiando a la comunidad donde estamos establecidos.</p>
+                <p>Liderar el mercado del sector productivo fomentando valores éticos a nuestros colaboradores que sean aplicados a nuestros procesos, bajo principios de responsabilidad social que nos permita integrar la sostenibilidad del modelo de gestión integral mediante prácticas de conservación del medio ambiente, calidad y seguridad alimentaria, logrando ser un referente tanto en el mercado nacional como internacional brindando bienestar a nuestros colaboradores, comunidad y clientes.</p>
             </div>
             
             <div class="servicio">
                 <img src="./img/mision.jpg" alt="Descripción de la imagen" class="imagen-centrada">
                 <h4>MISIÓN</h4>
                 <hr>
-                <p>Somos un grupo empresarial dedicado al procesamiento de productos del mar, enfocado a satisfacer las necesidades de nuestros clientes, colaboradores y accionistas con un trabajo en equipo, honesto y competitivo, bajo procesos que tienen altas normas de aseguramiento de calidad y eficiencia.</p>
+                <p>Producir alimentos derivados del mar en diferentes presentaciones de conservas bajo estrictos estándares de calidad a través de la innovación y desarrollo, aplicando estrategias que sean responsables con el medio ambiente mediante trazabilidad de materias primas y protegiendo el entorno, promoviendo valores éticos con nuestros colaboradores, grupos de interés, proveedores, clientes, y comunidad, que permitan implementar una adecuada cultura organizacional mediante políticas internas alineadas a nuestro sistema de gestión integral.</p>
             </div>
             <div class="servicio">
                 <img src="./img/politica.jpeg" alt="Descripción de la imagen" class="imagen-centrada">
-                <h4>POLÍTICA</h4>
+                <h4>RESPONSABILIDAD SOCIAL</h4>
                 <hr>
-                <p>Ser líderes en brindar productos y servicios que generen confianza a nuestros clientes, contando con un respaldo en nuestro posicionamiento de marca en los mercados nacionales e internacionales, beneficiando a la comunidad donde estamos establecidos.</p>
+                <p>– FISHCORP S.A se compromete a mejorar las condiciones de vida de sus colaboradores impulsando iniciativas que potencien el crecimiento profesional, pago justo y conocimiento de los derechos laborales, y fomentando prácticas amigables con el medio ambiente que beneficien a la comunidad.</p>
             </div>
         </div>        
     </section>
@@ -314,72 +370,47 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
+                <img src="img/presentacion1.jpg" alt="">
                 <div class="info">
-                    <h4>Lomos de Atún</h4>
+                    <h4>Atún Desmenuzado en Aceite</h4>
                     <p>Presentaciones de 140 - 200 gramos</p>
                 </div>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
+                <img src="img/presentacion2.jpg" alt="">
                 <div class="info">
-                    <h4>Lomos de Atún</h4>
-                    <p>Presentaciones de 140 - 200 gramos</p>
+                    <h4>Pouch de Atún en Lomo</h4>
+                    <p>Presentaciones de 1 - 3 - 5 - 7 Kilos</p>
                 </div>
             </div>
         </div>
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
+                <img src="img/presentacion4.jpg" alt="">
                 <div class="info">
                     <h4>Lomos de Atún</h4>
-                    <p>Presentaciones de 140 - 200 gramos</p>
+                    <p>Envase de vidrio</p>
                 </div>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
+                <img src="img/presentacion5.jpg" alt="">
                 <div class="info">
-                    <h4>Lomos de Atún</h4>
-                    <p>Presentaciones de 140 - 200 gramos</p>
+                    <h4>Funda de Lomos de Atún</h4>
+                    <p>Presentaciones de 5 - 7 - 10 Kilos</p>
                 </div>
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
+                <img src="img/presentacion6.jpg" alt="">
                 <div class="info">
                     <h4>Lomos de Atún</h4>
-                    <p>Presentaciones de 140 - 200 gramos</p>
+                    <p>Disguste el sabor de nuestros productos</p>
                 </div>
             </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
-                <div class="info">
-                    <h4>Lomos de Atún</h4>
-                    <p>Presentaciones de 140 - 200 gramos</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
-                <div class="info">
-                    <h4>Lomos de Atún</h4>
-                    <p>Presentaciones de 140 - 200 gramos</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/producto.jpeg" alt="">
-                <div class="info">
-                    <h4>Lomos de Atún</h4>
-                    <p>Presentaciones de 140 - 200 gramos</p>
-                </div>
-            </div>
+        </div>       
         </div>
     </section>
 
@@ -446,6 +477,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
