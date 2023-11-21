@@ -29,7 +29,7 @@
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                            <li><a href="#personal-services" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#personal-services" onclick="seleccionar(this)">GALERÍA</a></li>
                             <li><a href="#vision-mision" onclick="seleccionar(this)">VISIÓN Y MISIÓN</a></li>
                             <li><a href="#portfolio" onclick="seleccionar(this)">PRODUCTOS</a></li>
                             <li><a href="#contacto" onclick="seleccionar(this)">INFORMACIÓN</a></li>
@@ -51,7 +51,7 @@
             </header>
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos</p>
-                <h2>A <span>FISHCORP</span>, Empresa Atunera Ecuatoriana</h2>
+                <h2><span>FISHCORP S.A.</span>, Empresa Atunera Ecuatoriana</h2>
                 <p class="descripcion">La fuerza del océano nos inspira, cada día nos desafiamos a alcanzar nuevas metas y a brindar lo mejor de nosotros para llevar productos frescos y de calidad a tu mesa. </p>
                 <!-- <a href="#portfolio">Ir a Portafolio</a> -->
             </div>
@@ -64,7 +64,7 @@
             <img src="img/foto1.jpg" alt="">
         </div>
         <div class="sobremi">
-            <p class="titulo-seccion">Sobre Mi</p>
+            <!-- <p class="titulo-seccion">Sobre Mi</p> -->
             <h2>Hola, Nuestra Querida Empresa <span>FISHCORP</span> Les da la Bienvenida </h2>
             <h3>NOSOTROS</h3>
             <p>La producción de FISHCORP S.A. está dirigida al procesamiento de lomos precocidos congelados empacados al vacío, conservas de atún y sardinas en diferentes presentaciones</p>
@@ -191,7 +191,7 @@
     <section id="personal-services" class="home">
         <div id="carousel" class="carousel slide" data-ride="carousel">
 
-            <h3 class="titulo-seccion">PERSONAL DE SERVICIOS</h3>
+            <h3 class="titulo-seccion">GALERÍA DE IMAGÉNES</h3>
       
           <div class="carousel-controls">
             <ol class="carousel-indicators">
@@ -387,10 +387,10 @@
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/presentacion4.jpg" alt="">
+                <img src="img/img-producto.png" alt="" class="tamanio-img">
                 <div class="info">
                     <h4>Lomos de Atún</h4>
-                    <p>Envase de vidrio</p>
+                    <p>Thon entier</p>
                 </div>
             </div>
             <div class="proyecto">
@@ -410,6 +410,19 @@
                 </div>
             </div>
         </div>       
+        </div>
+    </section>
+
+    <!-- SECTION I D E N T I F I C A C I Ó N -->
+   
+    <section id="identidad">
+        <div class="contenido">           
+            <div class="presentacion">
+                <p class="quienes-somos">Quienes Somos</p>
+                <!-- <h2><span>FISHCORP S.A.</span>, Empresa Atunera Ecuatoriana</h2> -->
+                <p class="descripcion">La empresa FISHCORP S.A. fue constituida el 7 de agosto de 1996, en el cantón Jaramijó provincia de Manabí-Ecuador. Se encuentra ubicada en el Km. 4 1/2 vía Manta – Rocafuerte. </p>
+                <!-- <a href="#portfolio">Ir a Portafolio</a> -->
+            </div>
         </div>
     </section>
 
@@ -436,7 +449,7 @@
     
 
      <!-- SECCION CONTACTO -->
-    <section class="contacto" id="contacto">
+     <section class="contacto" id="contacto">
         <div class="contenido-seccion">
             <h2 class="titulo-seccion">Información</h2>
             <div class="fila">
@@ -455,13 +468,15 @@
                 </div>
                 <div class="col">
                     <h2>
-                        <i class="fa-solid fa-building"></i> Quienes Somos
+                        <i class="fa-solid fa-building"></i>
+                        <a class="icono" href="#identidad" onclick="seleccionar(this)">Quienes Somos</a>
                     </h2>
-                    <span class="info-contacto">La empresa FISHCORP S.A. fue constituida el 7 de agosto de 1996, en el cantón Jaramijó provincia de Manabí-Ecuador. Se encuentra ubicada en el Km. 4 1/2 vía Manta – Rocafuerte.</span>
+                    <span class="info-contacto"></span>
                 </div>
             </div>
         </div>
     </section>
+    
     
 
     <!-- SECCION FOOTER -->
