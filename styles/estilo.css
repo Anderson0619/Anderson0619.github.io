@@ -717,7 +717,7 @@
         #portfolio .fila .proyecto .info {
             position: absolute;
             left: 0px;
-            background-color: rgba(230, 28, 28, 0.8);
+            background-color: rgba(14, 16, 15, 0.8);
             color: #ff5080;
             width: 100%;
             padding: 10px;
@@ -818,7 +818,7 @@
         /* SECCION CONTACTO */
         .contacto {
             background-color: #202020;
-            padding: 80px 0 100px 0;
+            padding: 0px 0 100px 0;
             color: white;
             text-align: center;
             margin-top: 5px;
