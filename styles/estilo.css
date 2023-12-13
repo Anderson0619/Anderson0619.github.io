@@ -24,14 +24,14 @@
             width: 200px;
         }
         #inicio {
-            background: linear-gradient( rgba(55, 137, 151, 0.7), rgba(0, 0, 0, .7)), url("img/fondo-inicio.jpg");
+            background: linear-gradient( rgb(101, 100, 100), rgba(15, 178, 243, 0.281)), url("../img/fondo2.gif");
             background-size: cover;
             background-position: center center;
             height: 100vh;
         }
         
         #inicio .contenido header {
-            background-color: rgba(63, 166, 214, 0.8);
+            background-color: rgb(248, 249, 249);
             position: fixed;
             width: 100%;
             z-index: 100;
@@ -60,19 +60,21 @@
         
         #inicio .contenido header .contenido-header nav ul li a {
             text-decoration: none;
-            color: #fff;
+            color: #0c0c0c;
             margin: 0 12px;
             font-weight: 400;
             transition: .5s;
+            font-family:'Times New Roman', Times, serif;
         }
         
         #inicio .contenido header .contenido-header nav ul li a:hover {
             color: #ff5080;
+            font-family:'Times New Roman', Times, serif;
         }
         
         #inicio .contenido header .contenido-header .redes a {
             text-decoration: none;
-            color: #fff;
+            color: #0a0a0a;
             display: inline-block;
             margin-left: 10px;
             transition: .5s;
@@ -90,7 +92,7 @@
             max-width: 1100px;
             height: 100vh;
             margin: auto;
-            color: #fff;
+            color: #111010;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -119,8 +121,10 @@
         #inicio .contenido .presentacion .descripcion {
             max-width: 700px;
             margin: 25px auto;
-            font-size: 18px;
+            font-size: 25px;
             text-align: center;
+            color: #000;
+            font-family: 'Times New Roman', Times, serif;
         }
         
         #inicio .contenido .presentacion a {
@@ -409,11 +413,11 @@
         /* *********************/
         
         .contenedor-skills {
-            background: linear-gradient( #5aebddcc, rgba(33, 16, 16, 0.8)), url("img/fondo-skills.jpg");
+            background: linear-gradient( #34d5d5cc, rgba(33, 32, 32, 0.8)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
-            color: #fff;
+            color: #fdfefd;
             background-position: center center;
             padding: 100px 0;
             text-align: center;
@@ -479,7 +483,7 @@
         /* *********************/
 
         #identidad {
-            background: linear-gradient( rgba(58, 190, 213, 0.7), rgba(26, 35, 42, 0.7)), url("img/fondo-inicio.jpg");
+            background: linear-gradient( rgba(58, 190, 213, 0.7), rgba(29, 42, 26, 0.7)), url("img/fondo-inicio.jpg");
             background-size: cover;
             background-position: center center;
             height: 40vh;
@@ -549,14 +553,14 @@
             text-align: center;
         }
         .home .carousel-item h2{
-            font-family: 'Kaushan Script', cursive;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 80px;
             color: #fff;
             margin: 0 0 10px;
             opacity: 0;
         }
         .home .carousel-item p{
-            font-family: "poppins", sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             font-size: 24px;
             margin: 0;
             color: #eee;
