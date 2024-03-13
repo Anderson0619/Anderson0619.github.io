@@ -309,13 +309,22 @@
         }
 
         /* *********************/
+        /* seccion E N L A C E S */
+        /* *********************/
+
+        p a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        /* *********************/
         /* seccion V I S I O N - M I S I O N */
         /* *********************/
 
-    
+        
 
         #vision-mision {
-            background: linear-gradient( #5aebddcc, rgba(33, 16, 16, 0.8)), url("img/oceano.jpg");
+            background: linear-gradient( #94e4dccc, rgba(57, 81, 109, 0.8)), url("img/oceano.jpg");
             padding: 100px 15px;
             text-align: center;
             background-color: #f3f3f3;
@@ -408,6 +417,7 @@
             font-size: 14px;
             line-height: 22px;
         }
+        
         /* *********************/
         /* seccion S K I L L S */
         /* *********************/
@@ -486,7 +496,7 @@
             background: linear-gradient( rgba(58, 190, 213, 0.7), rgba(29, 42, 26, 0.7)), url("img/fondo-inicio.jpg");
             background-size: cover;
             background-position: center center;
-            height: 40vh;
+            height: 80vh;
         }
 
         #identidad .contenido .presentacion .quienes-somos {
@@ -500,10 +510,10 @@
         }
 
         #identidad .contenido .presentacion .descripcion {
-            max-width: 700px;
-            margin: 25px auto;
+            max-width: 100%;
+            margin: 20px ;
             font-size: 18px;
-            text-align: center;
+            text-align: left;
             color: white;
         }
 
@@ -511,6 +521,11 @@
         /* seccion C A R R U S E L */
         /* *********************/
 
+        #carousel {
+            height: 800px; /* Ajusta este valor según sea necesario */
+            overflow: hidden; /* Evita que el contenido del carrusel sobresalga del contenedor */
+        }
+        
         #carousel .titulo-seccion {
             text-align: center;
             font-size: 22px;
@@ -524,6 +539,7 @@
             margin: 10px; /* Espacio externo */
             padding: 10px; /* Espacio interno */
             box-sizing: border-box; /* Asegura que el padding no afecte el ancho y alto total del elemento */
+            transition: none;
         }
         
 
@@ -696,6 +712,14 @@
             overflow: hidden;
         }
 
+        #portfolio .fila .proyecto1 {
+            max-width: 550px;
+            border: 1px solid #5cc072;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
         #portfolio .fila .proyecto .tamanio-img {
             max-width: 450px;
             border: 1px solid #5cc072;
@@ -712,8 +736,20 @@
             object-fit: cover;
             transition: .5s;
         }
+
+        #portfolio .fila .proyecto1 img {
+            width: 540px;
+            height: 200px;            
+            /* filter: grayscale(1); */
+            object-fit: cover;
+            transition: .5s;
+        }
         
         #portfolio .fila .proyecto:hover img {
+            filter: grayscale(0);
+        }
+
+        #portfolio .fila .proyecto1:hover img {
             filter: grayscale(0);
         }
         
@@ -728,8 +764,25 @@
             bottom: -40px;
             transition: .5s;
         }
+
+        #portfolio .fila .proyecto1 .info {
+            position: absolute;
+            left: 0px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #ff5080;
+            width: 100%;
+            padding: 10px;
+            opacity: 0;
+            bottom: -40px;
+            transition: .5s;
+        }
         
         #portfolio .fila .proyecto:hover .info {
+            opacity: 1;
+            bottom: 0;
+        }
+
+        #portfolio .fila .proyecto1:hover .info {
             opacity: 1;
             bottom: 0;
         }
@@ -875,7 +928,58 @@
             margin-top: 5px; /* Agrega un margen entre los elementos */
         }
 
+        /* *********************/
+        /* seccion V A L O R E S */
+        /* *********************/
 
+        #valores {
+            background-color: #f2f4f4;
+            padding: 50px 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .titulo-valores {
+            text-align: center;
+            font-size: 36px;
+            color: #1da3eb;
+            margin-bottom: 30px;
+        }
+        
+        .valores-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .valor-icono {
+            flex: 0 0 100px;
+            margin-right: 20px;
+        }
+        
+        .valor-icono img {
+            max-width: 100%;
+        }
+        
+        .valor-info {
+            flex: 1;
+        }
+        
+        .valor-nombre {
+            font-size: 24px;
+            color: #080808;
+            margin-bottom: 10px;
+        }
+        
+        .valor-descripcion {
+            font-size: 18px;
+            color: #399de9;
+        }
+        
+        
         
 
         /* *********************/
