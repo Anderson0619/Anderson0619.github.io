@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="styles/new-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comentarios</h1>
+        <form id="commentForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" required>
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" required></textarea>
+            <button type="submit">Enviar comentario</button>
+        </form>
+        <div id="comments"></div>
+    </div>
+
+    <script src="comentario.js"></script>
+</body>
+</html>
