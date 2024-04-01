@@ -24,7 +24,7 @@
             width: 200px;
         }
         #inicio {
-            background: linear-gradient( rgb(101, 100, 100), rgba(15, 178, 243, 0.281)), url("../img/fondo2.gif");
+            background: linear-gradient( rgba(135, 223, 250, 0.692), rgba(0, 0, 0, 0.418)), url("../img/fondo3.gif");
             background-size: cover;
             background-position: center center;
             height: 100vh;
