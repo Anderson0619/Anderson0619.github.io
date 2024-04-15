@@ -227,7 +227,7 @@
                     En abril del 2015 se inaugura la línea de conservas en Pouch para las presentaciones tradicionales de 1, 3, 5 y 7 kilos. Con una capacidad de 8 Toneladas de Pouch por día.Fishcorp S.A. cuenta con una Cámara Frigorífica de 3000 Toneladas y un Buque Pesquero de 240 Toneladas.
                 </p>                
                 <p class="descripcion">                
-                    Fishcorp S.A. cumple con la normativa legal interna como planta procesadora de alimentos, entre los entes de control del país en función a la seguridad alimentaria con altos parámetros de calidad y tiene certificación HACCP, FDA, DOLPHIN SAFE.                
+                    Fishcorp S.A. cumple con la normativa legal interna como planta procesadora de alimentos, entre los entes de control del país en función a la seguridad alimentaria con altos parámetros de calidad y tiene certificación HACCP, FDA, BRCG-IFS Y BSCI.                
                 </p>                
                 <p class="descripcion">                
                     Se mantiene relaciones comerciales con empresas Líderes en la Comunidad Europea, Colombia, Perú, Chile, Venezuela y Estados Unidos. 
@@ -279,9 +279,9 @@
         </div>
     </section>
 
-    <a href="https://api.whatsapp.com/send?phone=0983373456" class="btn-wsp" target="_blank">
+   <!--  <a href="https://api.whatsapp.com/send?phone=0983373456" class="btn-wsp" target="_blank">
 	    <i class="fa fa-whatsapp icono"></i>
-	</a>   
+	</a>    -->
 
      <!-- SECCION CONTACTO -->
     <!-- <section class="contacto" id="contacto">
@@ -359,6 +359,62 @@
         </form>
       </div> -->
 
+    <!-- VENTANA FLOTANTE -->
+
+    <div class="ventana" id="vent">
+        <div id="cerrar"> <a href="javascript:cerrar()"> <img class="estilo-cerrar" src="./img/cerrar.png"></a></div>
+        BIENVENIDOS AL BUZÓN DE SUGERENCIAS 
+
+        <div class="contenedor-formulario">
+            <div class="imagen-contenedor">
+                <img class="img-contenedor" src="./img/sugerencias.png" alt="">
+            </div>
+            <div class="formulario-contenedor">
+                <!-- Aquí puedes agregar tu formulario -->
+                <form id="contactForm" action="#" autocomplete="off">
+                    <label for="anonimo" class="titulo-denuncia">Categorización de Denuncias</label>
+                    <label for="anonimo">Seleccione la Categorización</label>
+                    <select name="categorizacion" id="categorizacion" class="formulario-categorizacion">
+                        <option value="Ninguna">--</option>
+                        <option value="Robo">Robo</option>
+                        <option value="Perdida de insumos">Perdida de insumos</option>
+                        <option value="Sabotaje">Sabotaje</option>
+                        <option value="Malversación de recursos">Malversación de recursos</option>
+                        <option value="Perjuicios con la seguridad, integridad, autenticidad, calidad y legalidad del producto">Perjuicios con la seguridad, integridad, autenticidad, calidad y legalidad del producto</option>
+                        <option value="Extorsión">Extorsión</option>
+                        <option value="Corrupción">Corrupción</option>
+                        <option value="Soborno">Soborno</option>
+                        <option value="Fraude">Fraude</option>
+                        <option value="Acoso sexual">Acoso sexual</option>
+                        <option value="Daños con el medio ambiente">Daños con el medio ambiente</option>
+                        <option value="Y todo aquello que determine la ley, o que afecte gravemente a la empresa, trabajadores y personal externo">Y todo aquello que determine la ley, o que afecte gravemente a la empresa, trabajadores y personal externo</option>
+                        <option value="Infraestructura">Infraestructura</option>
+                        <option value="Relaciones Personales">Relaciones Personales</option>
+                        <option value="Derechos Contractuales">Derechos Contractuales</option>
+                        <option value="Derechos Humanos y Laborales">Derechos Humanos y Laborales</option>
+                        <option value="Comedor">Comedor</option>
+                        <option value="Transporte">Transporte</option>
+                        <option value="Remuneraciones">Remuneraciones</option>
+                        <option value="Uniformes">Uniformes</option>
+                        <option value="Ambiente Laboral">Ambiente Laboral</option>
+                        <option value="Otros">Otros</option>
+                    </select>
+                    <label for="anonimo">Enviar de forma anónima</label>
+                    <input type="checkbox" id="anonimo" name="anonimo" class="checkbox">
+                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <textarea id="message" name="message" placeholder="Comentario" required></textarea>
+                    <button class="color-button" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- <img class="img-contenedor" src="./img/sugerencias.png" alt=""> -->
+    </div>
+
+    <section id="contenedor-flotante">
+        <a class="estilo-conte-flot" href="javascript:abrir()">CLICK PARA DENUNCIAS Y SUGERENCIAS</a>
+    </section>
 
     <div class="container-form">
         <div class="info-form">
@@ -369,14 +425,14 @@
             <a href="#"><i class="fa fa-map-marked"></i>Manta-Rocafuerte, Ecuador </a>
             <a href="#identidad"><i class="fa-solid fa-building"></i>Quienes Somos </a>
         </div>
-        <form id="contactForm" action="#" autocomplete="off">
+        <form id="contactForm-general" action="#" autocomplete="off">
             <!-- <input type="text" name="nombre" placeholder="Ingresa tu nombre" class="campo"> -->
-            <input type="text" id="name" name="name" placeholder="Nombre" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <textarea id="message" name="message" placeholder="Comentario" required></textarea>
+            <input type="text" id="name-general" name="name" placeholder="Nombre" required>
+            <input type="email" id="email-general" name="email" placeholder="Email" required>
+            <textarea id="message-general" name="message" placeholder="Comentario" required></textarea>
             <button type="submit">Enviar</button>
         </form>
-    </div>
+    </div>    
     
 
     <!-- SECCION FOOTER -->
@@ -391,6 +447,8 @@
 
     <script src="script.js"></script>
     <script src="comentario.js"></script>
+    <script src="./flotante.js"></script>
+    <script src="./sugerencias.js"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <script src="bootstrap.bundle.min.js"></script>
 </body>

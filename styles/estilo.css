@@ -1175,6 +1175,84 @@
             margin-bottom: 10px;
         }
 
+        /* *********************/
+        /* seccion V E N T A N A */
+        /* *********************/
+
+        .ventana {
+            background: rgb(86, 119, 141);
+            width: 50%;
+            color: rgb(255, 255, 255, 1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            text-align: center;
+            padding: 33px;
+            min-height: 250px;
+            border-radius: 22px;
+            position: fixed; /* Cambiado a fixed para que sea relativo a la ventana del navegador */
+            top: 48%;
+            left: 50%;
+            transform: translate(-50%, -40%); /* Centra vertical y horizontalmente */
+            display: none;
+        }
+
+        .imagen-contenedor {
+            flex: 1; /* Ocupa el 50% del espacio disponible */
+            margin-right: 20px; /* Espacio entre la imagen y el formulario */
+        }
+
+        .formulario-contenedor {
+            flex: 1; /* Ocupa el 50% del espacio disponible */
+            margin-left: 20px; /* Espacio entre la imagen y el formulario */
+        }
+
+        .contenedor-formulario{
+            display: flex;
+            flex-direction: row;
+            align-items: center; /* Centrar verticalmente */
+            justify-content: space-around; /* Espaciado equitativo */
+        }
+        
+        .img-contenedor{
+            width: 350px;
+            height: 460px;
+        }
+
+        #cerrar{
+            position: absolute;
+            right: 5px;
+            top: 1px;
+        }
+
+        .estilo-cerrar{
+            width:20px
+        }
+
+        .estilo-conte-flot{
+            margin:12px;
+            text-decoration: none;
+        }
+
+        .color-button{
+            background-color:rgba(62, 182, 116, 0.692)
+        }
+
+        .formulario-categorizacion{
+            width: 220px;
+            background-color: white;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .titulo-denuncia{
+            color: #ff9100;
+            font-size: 18px;
+        }
+
+        .checkbox{
+            margin-bottom: 8px;
+        }
+
           /* End of styles */
 
         /* *********************/
