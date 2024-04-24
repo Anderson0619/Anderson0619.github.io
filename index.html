@@ -44,10 +44,11 @@
 
 
                     <div class="redes">
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i><span class="tooltip">YouTube</span></a>
+                        <a class="comments" href="javascript:abrir()"><i class="fas fa-comment-dots"></i><span class="tooltip">Buzón Virtual</span></a>                        
+                        <a href="#"><i class="fa-brands fa-facebook"></i><span class="tooltip">Facebook</span></a>
                     </div>
+                    
                 </div>
             </header>
             <div class="presentacion">
@@ -363,7 +364,7 @@
 
     <div class="ventana" id="vent">
         <div id="cerrar"> <a href="javascript:cerrar()"> <img class="estilo-cerrar" src="./img/cerrar.png"></a></div>
-        BIENVENIDOS AL BUZÓN DE SUGERENCIAS 
+        BUZÓN VIRTUAL PARA SUGERENCIAS, QUEJAS O DENUNCIAS 
 
         <div class="contenedor-formulario">
             <div class="imagen-contenedor">
@@ -398,23 +399,23 @@
                         <option value="Uniformes">Uniformes</option>
                         <option value="Ambiente Laboral">Ambiente Laboral</option>
                         <option value="Otros">Otros</option>
-                    </select>
+                    </select> 
                     <label for="anonimo">Enviar de forma anónima</label>
                     <input type="checkbox" id="anonimo" name="anonimo" class="checkbox">
-                    <input type="text" id="name" name="name" placeholder="Nombre" required>
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>                   
                     <textarea id="message" name="message" placeholder="Comentario" required></textarea>
                     <button class="color-button" type="submit">Enviar</button>
                 </form>
+                <div id="successMessage" class="hidden">¡Gracias por su opinión!</div>
             </div>
         </div>
 
         <!-- <img class="img-contenedor" src="./img/sugerencias.png" alt=""> -->
     </div>
 
-    <section id="contenedor-flotante">
+    <!-- <section id="contenedor-flotante">
         <a class="estilo-conte-flot" href="javascript:abrir()">CLICK PARA DENUNCIAS Y SUGERENCIAS</a>
-    </section>
+    </section> -->
 
     <div class="container-form">
         <div class="info-form">
@@ -439,18 +440,18 @@
     <footer>
         <p id="copyright">Fishcorp S.A ®</p>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i><span class="tooltip">YouTube</span></a>
+            <a class="comments" href="javascript:abrir()"><i class="fas fa-comment-dots"></i><span class="tooltip">Buzón Virtual</span></a>                        
+            <a href="#"><i class="fa-brands fa-facebook"></i><span class="tooltip">Facebook</span></a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="comentario.js"></script>
-    <script src="./flotante.js"></script>
-    <script src="./sugerencias.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/comentario.js"></script>
+    <script src="./js/flotante.js"></script>
+    <script src="./js/sugerencias.js"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

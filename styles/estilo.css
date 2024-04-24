@@ -68,7 +68,7 @@
         }
         
         #inicio .contenido header .contenido-header nav ul li a:hover {
-            color: #359fbd;
+            color: #32a9ca;
             font-family:'Times New Roman', Times, serif;
         }
         
@@ -81,12 +81,47 @@
         }
         
         #inicio .contenido header .contenido-header .redes a:hover {
-            color: #ff5080;
+            color: #509cff;
         }
         
         #inicio .contenido header .contenido-header .seleccionado {
             color: #359fbd;
         }
+
+        .redes {
+            display: flex;
+            justify-content: center;
+          }
+          
+          .redes a {
+            display: inline-block;
+            position: relative;
+            margin: 0 10px;
+            text-decoration: none;
+          }
+          
+          .redes a .tooltip {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+          
+          .redes a:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
+          }
+          
         
         #inicio .contenido .presentacion {
             max-width: 1100px;
@@ -1229,8 +1264,14 @@
         }
 
         .estilo-conte-flot{
-            margin:12px;
+            margin:30%;
             text-decoration: none;
+            color: #1aa2c4;
+            font-weight: bold;
+        }
+
+        .estilo-conte-flot:hover {
+            color: #080808;
         }
 
         .color-button{
